@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="jumbotron text-center">
+        <h3>Nabersiniz lan devrimciler?</h3>
+        <p>1972'de bir yazilimci demis ki: "yazilim isi artik eskisi gibi basit degil. artik devasa bilgisayarlarimiz var ve dolayisiyla da devasa sorunlarimiz var." adini unuttum belki editlerim. adamin 1972 yilinda bahsettigi devasa bilgisayarlari ve yazilimlari düsünün.
+
+            günümüzde insanoglu uzaya aciliyor ve günümüzün devasa yazilim problemleri de 50 sene sonrakilere cok basit bir sey gibi gelecek. o yüzden yazilimcilik asla bitmez.
+            
+            asla gerceklesmeyecek bir bitme durumudur yani. </p>
+</div>
+
+<p>
+
+    {% if request.user.is_authenticated %}
+        Giriş Yapılmış      
+    {% else %}
+        Giriş Yapılmamış
+    {% endif %}
+    
+
+</p>
+
+{% endblock body %}
+
